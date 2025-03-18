@@ -1,0 +1,193 @@
+%-------------------------
+% Resume in Latex
+% Author : Antonio Lotti Villar
+% Website: https://github.com/AntoLotti
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+    % __ANTONIO put links in the names
+    \textbf{\href{http://Link}{\Large Antonio}} & Email :
+    \href{mailto:antoniolottivillar@gmail.com}{antoniolottivillar@gmail.com}\\
+    
+    \textbf{\href{http://Link}{\Large Lotti Villar}} & Mobile : 
+    +34 620 672 054 \\
+
+    Junior Systems Electronics Engineer & LinkedIn:
+    \href{https://www.linkedin.com/in/antonioLottiVillar/}{Antonio Lotti Villar} \\ 
+    
+    & Github:
+    \href{https://github.com/AntoLotti}{AntoLotti}
+
+\end{tabular*}
+
+\smallskip
+%-----------RESUME-----------------
+\section{Resume}
+    \smallskip
+    \begin{minipage}{0.95\textwidth}
+        \smallskip
+        \textbf{Electronics enthusiast} with a deep professional interest in \textbf{embedded systems development}, especially in the area of \textbf{firmware development}. Some experience with technologies such as \textbf{ARM microcontrollers, RTOS systems, Threads, Process, IoT and FPGAs}. Proactive engineer, committed to continuous learning and adaptation to new methodologies and tools.
+    \end{minipage}
+
+\medskip
+%-----------EDUCATION-----------------
+\section{Education}
+    \smallskip
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          { Polytechnic University of Madrid (UPM) }{ Madrid, Spain }
+          { Master's degree in electronic systems engineering} {Sep. 2023 -- Act }
+        \resumeSubheading
+          { Alfonso X The Wwise university (UAX)}{ Madrid, Spain}
+          { Degree in Industrial and Automatic Electronic Engineering } {Sep. 2019 -- July. 2023}
+  \resumeSubHeadingListEnd
+
+\smallskip
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    \smallskip
+    \resumeSubHeadingListStart
+
+        \resumeSubheading
+            { Capgemini S.A. }{ Madrid, Spain }
+            {Junior System Engineer}{ July 2024 -- Act }
+        \resumeItemListStart
+            \resumeItem{Development Projects}
+            {Embedded systems development projects with clients such as Airbus and Indra}
+        \resumeItemListEnd
+
+        \bigskip
+    
+        \resumeSubheading
+            { Indra Systems, SA }{Madrid, Spain}
+            {Laboratory Technician}{Feb. 2023 -- Feb. 2024}
+        \resumeItemListStart
+            \resumeItem{Microcontrollers}
+            {Optimization the programming of PIC microcontrollers.}
+            \resumeItem{Hardware Testing}
+            {Responsible for the assembly, testing, and implementation of various hardware components.}
+        \resumeItemListEnd   
+
+    \resumeSubHeadingListEnd
+
+\smallskip
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Embedded Systems Projects – Master’s Program}
+      {Designed and implemented embedded systems solutions using the STM32F411 DISCOVERY board, focusing on finite-state machines, sensor integration, and real-time task management with FreeRTOS.}
+    \resumeSubItem{Finite State Machine (FSM) Library Testing with Ceedling}
+      {Developed and tested a Finite State Machine (FSM) library in C using Ceedling, ensuring robustness through unit testing and automated validation.}
+    \resumeSubItem{Virtual Control of a Robotic Arm}
+      {Developed a simulation environment for controlling a five-degree-of-freedom robotic arm, enabling motion testing before physical implementation. Applied skills in robotic kinematics, MATLAB programming, Arduino communication, and automation system design.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+\smallskip
+%--------PROGRAMMING SKILLS------------
+% \begin{minipage}[t]{0.45\textwidth}
+\section{Skills}
+    \smallskip
+    \resumeSubHeadingListStart
+        \resumeSubItem{Programming Languages:}
+            {C, C++, Python, Matlab, Java, Javascript}
+    \smallskip
+    \resumeSubItem{Tools}
+            {GDB, GCC, Git, Unity(testing), Ceedling(testing), Eclipse, VS Code, Altiumn, Multisim, LTspice}
+    \resumeSubHeadingListEnd
+% \end{minipage}
+%\hfill
+%
+%\begin{minipage}[t]{0.45\textwidth}
+\smallskip
+\section{Resources}
+    \smallskip
+    \resumeSubHeadingListStart
+        \resumeSubItem{Languages:}
+            {English, Spanish}
+    \smallskip
+    \resumeSubItem{Citizenship's:}
+            {Spanish; American (USA); Italian}
+    \resumeSubHeadingListEnd
+ 
+%\end{minipage}
+    
+    
+
+
+
+%-------------------------------------------
+\end{document}
