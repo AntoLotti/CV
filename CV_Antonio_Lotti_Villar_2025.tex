@@ -14,7 +14,8 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+%\usepackage[pdftex]{hyperref}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
 
@@ -76,23 +77,22 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-
-    % __ANTONIO put links in the names
-    \textbf{\href{https://www.linkedin.com/in/antonioLottiVillar/}{\Large Antonio}} & Email :
-    \href{mailto:antoniolottivillar@gmail.com}{antoniolottivillar@gmail.com}\\
-    
-    \textbf{\href{https://www.linkedin.com/in/antonioLottiVillar/}{\Large Lotti Villar}} & Mobile : 
-    +34 620 672 054 \\
-
-    Junior Systems Electronics Engineer & LinkedIn:
-    \href{https://www.linkedin.com/in/antonioLottiVillar/}{Antonio Lotti Villar} \\ 
-    
-    & Github:
-    \href{https://github.com/AntoLotti}{AntoLotti}
+    \begin{minipage}[t]{0.45\textwidth}
+        \textbf{\Huge Antonio} \\
+        \textbf{\huge Lotti Villar}\\
+        \Large Junior Systems Electronics Engineer\\
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \raggedleft
+        Email :\href{mailto:antoniolottivillar@gmail.com}{antoniolottivillar@gmail.com}\\
+        Mobile : +34 620 672 054 \\
+        LinkedIn:\href{https://www.linkedin.com/in/antonioLottiVillar/}{Antonio Lotti Villar} \\
+        Github:\href{https://github.com/AntoLotti}{AntoLotti}\\
+    \end{minipage}
 
 \end{tabular*}
 
-\smallskip
 %-----------RESUME-----------------
 \section{Resume}
     \smallskip
