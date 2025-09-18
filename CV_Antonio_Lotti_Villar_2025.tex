@@ -69,131 +69,13 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%---------------------------------------------%
+%             CV SECTIONS                     %
+%---------------------------------------------%
 \begin{document}
-
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \begin{minipage}[t]{0.45\textwidth}
-        \textbf{\Huge Antonio} \\
-        \textbf{\huge Lotti Villar}\\
-        \Large Junior Systems Electronics Engineer\\
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.45\textwidth}
-        \raggedleft
-        \textbf{Email:} 
-            \href{mailto:antoniolottivillar@gmail.com}{\underline{antoniolottivillar@gmail.com}}\\
-        \textbf{Mobile:} 
-            +34 620 672 054 \\
-        \textbf{LinkedIn:} 
-            \href{https://www.linkedin.com/in/antonioLottiVillar/}
-            {\underline{Antonio Lotti Villar}} \\
-        \textbf{Github:}
-            \href{https://github.com/AntoLotti}
-            {\underline{AntoLotti}}\\
-    \end{minipage}
-
-\end{tabular*}
-
-%-----------RESUME-----------------
-\section{Resume}
-    \smallskip
-    \begin{minipage}{0.95\textwidth}
-        \smallskip
-        \textbf{Electronics enthusiast} with a deep professional interest in \textbf{embedded systems development}, especially in the area of \textbf{firmware development}. Some experience with technologies such as \textbf{ARM microcontrollers, RTOS systems, Threads, Process, IoT and FPGAs}. Proactive engineer, committed to continuous learning and adaptation to new methodologies and tools.
-    \end{minipage}
-
-\medskip
-%-----------EDUCATION-----------------
-\section{Education}
-    \smallskip
-    \resumeSubHeadingListStart
-        \resumeSubheading
-          { Polytechnic University of Madrid (UPM) }{ Madrid, Spain }
-          { Master's degree in electronic systems engineering} {Sep. 2023 -- Act }
-        \resumeSubheading
-          { Alfonso X The Wwise university (UAX)}{ Madrid, Spain}
-          { Degree in Industrial and Automatic Electronic Engineering } {Sep. 2019 -- July. 2023}
-  \resumeSubHeadingListEnd
-
-\smallskip
-%-----------EXPERIENCE-----------------
-\section{Experience}
-    \smallskip
-    \resumeSubHeadingListStart
-
-        \resumeSubheading
-            { Capgemini S.A. }{ Madrid, Spain }
-            {Junior System Engineer}{ July 2024 -- Act }
-        \resumeItemListStart
-            \resumeItem{Development Projects}
-            {Embedded systems development projects with clients such as Airbus and Indra}
-        \resumeItemListEnd
-
-        \smallskip
-        
-        \resumeSubheading
-            { Indra Systems, SA }{Madrid, Spain}
-            {Laboratory Technician}{Feb. 2023 -- Feb. 2024}
-        \resumeItemListStart
-            \resumeItem{Microcontrollers}
-            {Optimization the programming of PIC microcontrollers.}
-            \resumeItem{Hardware Testing}
-            {Responsible for the assembly, testing, and implementation of various hardware components.}
-        \resumeItemListEnd   
-
-    \resumeSubHeadingListEnd
-
-\smallskip
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Embedded Systems Projects – Master’s Program}
-      {Designed and implemented embedded systems solutions using the STM32F411 DISCOVERY board, focusing on finite-state machines, sensor integration, and real-time task management with FreeRTOS.}
-    \resumeSubItem{Finite State Machine (FSM) Library Testing with Ceedling}
-      {Developed and tested a Finite State Machine (FSM) library in C using Ceedling, ensuring robustness through unit testing and automated validation.}
-    \resumeSubItem{Virtual Control of a Robotic Arm}
-      {Developed a simulation environment for controlling a five-degree-of-freedom robotic arm, enabling motion testing before physical implementation. Applied skills in robotic kinematics, MATLAB programming, Arduino communication, and automation system design.}
-%     \resumeSubItem{Mac Setup}
-%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-  \resumeSubHeadingListEnd
-
-\smallskip
-%--------PROGRAMMING SKILLS------------
-% \begin{minipage}[t]{0.45\textwidth}
-\section{Skills}
-    \smallskip
-    \resumeSubHeadingListStart
-        \resumeSubItem{Programming Languages:}
-            {C, C++, Python, Matlab, Java, Javascript}
-    \smallskip
-    \resumeSubItem{Tools}
-            {GDB, GCC, Git, Unity(testing), Ceedling(testing), Eclipse, VS Code, Altiumn, Multisim, LTspice}
-    \resumeSubHeadingListEnd
-% \end{minipage}
-%\hfill
-%
-%\begin{minipage}[t]{0.45\textwidth}
-\smallskip
-\section{Resources}
-    \smallskip
-    \resumeSubHeadingListStart
-        \resumeSubItem{Languages:}
-            {English, Spanish}
-    \smallskip
-    \resumeSubItem{Citizenship's:}
-            {Spanish; American (USA); Italian}
-    \resumeSubHeadingListEnd
- 
-%\end{minipage}
-    
-    
-
-
-
-%-------------------------------------------
+  \input{inc/header.tex}
+  \input{inc/resumen.tex}
+  \input{inc/education.tex}
+  \input{inc/experience.tex}
+  \input{inc/project_skills.tex}
 \end{document}
