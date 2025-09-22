@@ -14,10 +14,10 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-%\usepackage[pdftex]{hyperref}
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
+\usepackage{changepage}
 
 
 \pagestyle{fancy}
@@ -44,21 +44,73 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+% ------------------------ %
+%    Custom Environments   %
+% ------------------------ %
+\newenvironment{onecolentry}
+{
+  \begin{adjustwidth}{\dimexpr0cm+0.00001cm}{\dimexpr0cm+0.00001cm}
+}{
+  \end{adjustwidth}
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newenvironment{highlights}{
+    \begin{itemize}
+      [
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt,
+        label=\textbullet
+      ]
+}{
+    \end{itemize}
+}
+
+% ------------------- %
+%   Custom Commands   %
+% ------------------- %
+
+% MAIN TABLE %
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+
+\newcommand{\resumeSubheading}[4]
+{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Experience Commands %
+% ------------------- %
+
+\newcommand{\resumeExpItem}[4]
+{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, #2 & \textbf{\textit{#4}} \\
+      \textit{#3}  \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpDescrListStart}{ \smallskip \begin{onecolentry}\begin{highlights} }
+\newcommand{\resumeExpDescrListEnd}{ \end{highlights} \end{onecolentry} }
+
+\newcommand{\resumeExpItemDescr}[1]{ \smallskip \item { #1 \vspace{-2pt}} }
+
+% Project Commands %
+% ---------------- %
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \newcommand{\resumeSubItemProject}[2]{\resumeItem{#1}\\{#2}\vspace{-4pt}}
@@ -71,10 +123,13 @@
 %  \vspace{-4pt}
 %}
 
+
+% Skills Commands %
+% --------------- %
+
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
