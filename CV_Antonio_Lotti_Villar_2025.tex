@@ -39,11 +39,6 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
 % ------------------------ %
 %    Custom Environments   %
 % ------------------------ %
@@ -68,23 +63,66 @@
     \end{itemize}
 }
 
+% ------------------------ %
+%    Custom Sections   %
+% ------------------------ %
+\titleformat{\section}
+{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
 % ------------------- %
 %   Custom Commands   %
 % ------------------- %
 
-% MAIN TABLE %
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+% SECTIONS TABLE %
+\newcommand{\resumeHeaderItemListStart} {\begin{itemize}[label={}, leftmargin=0pt]}
+\newcommand{\resumeHeaderItemListEnd}   {\end{itemize}}
 
+\newcommand{\resumeSubItemListStart}    { \begin{onecolentry} \begin{highlights}}
+\newcommand{\resumeSubItemListEnd}      { \end{highlights}    \end{onecolentry}}
 
-\newcommand{\resumeSubheading}[4]
+\newcommand{\resumeSubItem}[1]{ \item #1 }
+
+% Education Commands %
+% ------------------- %
+\newcommand{\resumeEduItem}[4]
 {
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+  \item 
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} - #2 & \textbf{\textit{#4}} \\
+    \textit{#3}  \\
+  \end{tabular*}\vspace{-7pt}
 }
+
+% Experience Commands %
+% ------------------- %
+\newcommand{\resumeExpItem}[4]
+{
+  \item 
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} - #2 & \textbf{\textit{#4}} \\
+    \textit{#3}  \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+% Project Commands %
+% ---------------- %
+\newcommand{\resumeProjectItem}[1]{\item \textbf{#1}}
+
+% Skills Commands %
+% ---------------- %
+\newcommand{\resumeSkillItem}[2]
+{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubItemProject}[2]{\resumeItem{#1}\\{#2}\vspace{-4pt}}
+
 
 \newcommand{\resumeItem}[2]{
   \item\small{
@@ -92,47 +130,14 @@
   }
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-% Experience Commands %
-% ------------------- %
-
-\newcommand{\resumeExpItem}[4]
-{
-  \vspace{-1pt}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1}, #2 & \textbf{\textit{#4}} \\
-      \textit{#3}  \\
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeExpDescrListStart}{ \smallskip \begin{onecolentry}\begin{highlights} }
-\newcommand{\resumeExpDescrListEnd}{ \end{highlights} \end{onecolentry} }
-
-\newcommand{\resumeExpItemDescr}[1]{ \smallskip \item { #1 \vspace{-2pt}} }
-
-% Project Commands %
-% ---------------- %
-
-\newcommand{\resumeSubItemProject}[2]{\resumeItem{#1}\\{#2}\vspace{-4pt}}
-%\newcommand{\resumeSubItemProject}[2]
-%{
-%  \resumeItem{#1}\\
-%  \begin{itemize}
-%    \item {#2}
-%  \end{itemize}
-%  \vspace{-4pt}
-%}
-
-
-% Skills Commands %
-% --------------- %
-
-\renewcommand{\labelitemii}{$\circ$}
-
-
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %---------------------------------------------%
 %             CV SECTIONS                     %
