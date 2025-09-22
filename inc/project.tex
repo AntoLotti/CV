@@ -1,11 +1,31 @@
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Embedded Systems Projects – Master’s Program}
-      {Designed and implemented embedded systems solutions using the STM32F411 DISCOVERY board, focusing on finite-state machines, sensor integration, and real-time task management with FreeRTOS.}
-    \resumeSubItem{Finite State Machine (FSM) Library Testing with Ceedling}
-      {Developed and tested a Finite State Machine (FSM) library in C using Ceedling, ensuring robustness through unit testing and automated validation.}
-    \resumeSubItem{Virtual Control of a Robotic Arm}
-      {Developed a simulation environment for controlling a five-degree-of-freedom robotic arm, enabling motion testing before physical implementation. Applied skills in robotic kinematics, MATLAB programming, Arduino communication, and automation system design.}
+    %\resumeSubItemProject{Embedded Systems Emulation Project in Qemu: STM32F405 and LIS3DH I2C Driver}
+    %  {
+    %    Developed a QEMU-based emulation for an STM32F405 SoC and LIS3DH accelerometer, designing the I2C master controller and slave device peripherals from the ground up. 
+    %    Validated the emulation by successfully running and testing custom firmware on the virtual hardware platform.
+    %  }
+    \resumeSubItemProject{Embedded Systems Emulation Project in Qemu: STM32F405 and LIS3DH I2C Driver}
+      {
+        \begin{itemize}
+          \item Developed a QEMU-based emulation for an STM32F405 SoC and LIS3DH accelerometer, designing the I2C master controller and slave device peripherals from the ground up. 
+          Validated the emulation by successfully running and testing custom firmware on the virtual hardware platform.
+        \end{itemize}  
+      }
+    \resumeSubItemProject{FPGA-Based RS232 Communication Interface And Microcontroller Prototype}
+      {
+        \begin{itemize}
+          \item Designed and implemented a full RS232 serial communication controller in VHDL with configurable baud rates and a FIFO buffer. 
+          Used in conjunction with a developed a microcontroller prototype. Synthesized and tested on a Nexys4-DDR FPGA.
+        \end{itemize}
+      }
+    \resumeSubItemProject{Real-Time Multi-Sensor System with FreeRTOS}
+      {
+        \begin{itemize}
+          \item Designed and programmed an STM32 prototype to process accelerometer and magnetometer data via a Finite State Machine for real-time movement analysis. 
+          FreeRTOS was used to manage concurrency of sensor sampling and task control, with synchronization handled through queues and semaphores.
+        \end{itemize}
+      }
   \resumeSubHeadingListEnd
 
-\smallskip
+%\smallskip
