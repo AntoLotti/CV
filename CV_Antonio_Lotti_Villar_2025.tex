@@ -49,7 +49,7 @@
 % ------------------------ %
 \newenvironment{onecolentry}
 {
-  \begin{adjustwidth}{\dimexpr0cm+0.00001cm}{\dimexpr0cm+0.00001cm}
+  \begin{adjustwidth}{\dimexpr 0.5cm + 0.00001cm}{\dimexpr 0.5cm + 0.00001cm}
 }{
   \end{adjustwidth}
 }
@@ -92,6 +92,8 @@
   }
 }
 
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
 % Experience Commands %
 % ------------------- %
 
@@ -112,7 +114,6 @@
 % Project Commands %
 % ---------------- %
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 \newcommand{\resumeSubItemProject}[2]{\resumeItem{#1}\\{#2}\vspace{-4pt}}
 %\newcommand{\resumeSubItemProject}[2]
 %{
